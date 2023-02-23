@@ -2,156 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
-    <title>Donat</title>
-    <link rel="icon" type="image/x-icon" href="./bausctelle.jpg">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
-
-        @media (max-width: 510px) {
-            ul.content {
-                display: block;
-                
-            }
-            .nav>a>li{
-                border: none;
-                color: black;
-            }
-
-        }
-
-       * {
-    box-sizing: border-box;
-    margin: 0 auto;
-    max-width: 1200px;
-    background-color: #333;
-}
-
-        a {
-            text-decoration: none;
-        }
-
-        li {
-            font-family: 'IBM Plex Mono', monospace;
-            /* font-family: 'Zen Tokyo Zoo', cursive; */
-            font-size: 1.5rem;
-
-            filter: opacity(80%);
-        }
-
-        #nav {
-            /* border: 1px solid rgb(1, 250, 1); */
-            margin: 0;
-
-        }
-
-        .nav>a>li {
-            border: 1px solid rgb(22, 156, 85);
-            color: red;
-            border-radius: 5rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 1rem 10rem;
-            padding: 1rem;
-            background-color: rgba(22, 21, 21, 0.56);
-
-        }
-
-        .nav>a>li:hover {
-            border: 2px solid rgb(255, 255, 0);
-            color: rgb(255, 255, 255);
-            border-radius: 5rem;
-            margin: 1rem 10rem;
-            padding: 1rem;
-            background-color: rgba(21, 18, 18, 0.56);
-            box-shadow: 0 1rem 1rem 0rem rgba(230, 230, 230, 0.564);
-            filter: invert(100%);
-        }
-
-        h1,
-        p {
-            font-family: 'IBM Plex Mono', monospace;
-            color: white;
-            margin: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        span{
-    color: #00ff0d;
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
-}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-        /* .nav>ul{
+  <title>Donat</title>
+  <link rel="icon" type="image/x-icon" href="./bausctelle.jpg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+
+    @media (max-width: 510px) {
+      ul.content {
+        display: block;
+
+      }
+
+      .nav>a>li {
+        border: none;
+        color: black;
+      }
+
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0 auto;
+      max-width: 1200px;
+      background-color: #333;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    li {
+      font-family: 'IBM Plex Mono', monospace;
+      /* font-family: 'Zen Tokyo Zoo', cursive; */
+      font-size: 1.5rem;
+
+      filter: opacity(80%);
+    }
+
+    #nav {
+      /* border: 1px solid rgb(1, 250, 1); */
+      margin: 0;
+
+    }
+
+    .nav>a>li {
+      border: 1px solid rgb(22, 156, 85);
+      color: red;
+      border-radius: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem 10rem;
+      padding: 1rem;
+      background-color: rgba(22, 21, 21, 0.56);
+
+    }
+
+    .nav>a>li:hover {
+      border: 2px solid rgb(255, 255, 0);
+      color: rgb(255, 255, 255);
+      border-radius: 5rem;
+      margin: 1rem 10rem;
+      padding: 1rem;
+      background-color: rgba(21, 18, 18, 0.56);
+      box-shadow: 0 1rem 1rem 0rem rgba(230, 230, 230, 0.564);
+      filter: invert(100%);
+    }
+
+    h1,
+    p {
+      font-family: 'IBM Plex Mono', monospace;
+      color: white;
+      margin: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    span {
+      color: #00ff0d;
+      /* border: 1px solid red; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+
+    /* .nav>ul{
     margin: 0;
     padding: 0;
 } */
-            ul.nav {
-            padding: 0;
-        }
-/*  */
-/* ===================== 
+    ul.nav {
+      padding: 0;
+    }
+
+    /*  */
+    /* ===================== 
    Site.cs 
    ===================== */
 
-   body {
-    padding-top: 0px;
-    padding-bottom: 20px;
-}
+    body {
+      padding-top: 0px;
+      padding-bottom: 20px;
+    }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
+    /* Set padding to keep content from hitting the edges */
+    .body-content {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 
-/* Override the default bootstrap behavior where horizontal description lists 
+    /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
-.dl-horizontal dt {
-    white-space: normal;
-}
+    .dl-horizontal dt {
+      white-space: normal;
+    }
 
-/* Tabs */
-#cc-paypal {
-  display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-  border-bottom: solid 3px #457bd3;
-}
-#cc-paypal.nav-pills > li {
-  flex-basis: 50%;
-  text-align: center;
-}
-#cc-paypal.nav-pills > li > a {
-  border: solid 1px #ddd;
-  border-radius: 0;
-  /*background: transparent;*/
-  position: relative;
-  opacity: 0.8;
-}
-#cc-paypal.nav-pills > li.active > a,
-#cc-paypal.nav-pills > li.active > a:focus,
-#cc-paypal.nav-pills > li.active > a:hover {
-  background: #457bd3;
-  border-color: #457bd3;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  opacity: 1;
-}
-/* #cc-paypal.nav-pills > li.active > a:before {
+    /* Tabs */
+    #cc-paypal {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      border-bottom: solid 3px #457bd3;
+    }
+
+    #cc-paypal.nav-pills>li {
+      flex-basis: 50%;
+      text-align: center;
+    }
+
+    #cc-paypal.nav-pills>li>a {
+      border: solid 1px #ddd;
+      border-radius: 0;
+      /*background: transparent;*/
+      position: relative;
+      opacity: 0.8;
+    }
+
+    #cc-paypal.nav-pills>li.active>a,
+    #cc-paypal.nav-pills>li.active>a:focus,
+    #cc-paypal.nav-pills>li.active>a:hover {
+      background: #457bd3;
+      border-color: #457bd3;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      opacity: 1;
+    }
+
+    /* #cc-paypal.nav-pills > li.active > a:before {
   content: "";
   position: absolute;
   bottom: -12px;
@@ -175,41 +181,50 @@
   width: 11px;
   height: 12px;
 } */
-#cc-paypal.nav {
-    margin-bottom: 20px;
-}
-#cc-paypal.nav > li > a > img.img-creditcards,
-#cc-paypal.nav > li > a > img.img-paypal {
-  height: 34px;
-}
-#cc-paypal .tab-content {
-  margin-top: 30px;
-}
-#paypal-button {
-    position: relative;
-    /*left: 50%;
-    margin-left: -60px;*/
-    margin-bottom: 20px;
-}
-.warning-paypal {
-    text-align: center;
-    color: red;
-}
-.disable-click {
-    pointer-events:none;
-}
-li.disable-click.selectedOption > div {
-    background-color: #B8DDB4; 
-}
-.disable-click div, a.disable-click {
-    background-color: #EEE;
-}
+    #cc-paypal.nav {
+      margin-bottom: 20px;
+    }
 
-.success-paypal {
-    text-align: center;
-    color: limegreen;
-}
-/*@media(max-width:981px){
+    #cc-paypal.nav>li>a>img.img-creditcards,
+    #cc-paypal.nav>li>a>img.img-paypal {
+      height: 34px;
+    }
+
+    #cc-paypal .tab-content {
+      margin-top: 30px;
+    }
+
+    #paypal-button {
+      position: relative;
+      /*left: 50%;
+    margin-left: -60px;*/
+      margin-bottom: 20px;
+    }
+
+    .warning-paypal {
+      text-align: center;
+      color: red;
+    }
+
+    .disable-click {
+      pointer-events: none;
+    }
+
+    li.disable-click.selectedOption>div {
+      background-color: #B8DDB4;
+    }
+
+    .disable-click div,
+    a.disable-click {
+      background-color: #EEE;
+    }
+
+    .success-paypal {
+      text-align: center;
+      color: limegreen;
+    }
+
+    /*@media(max-width:981px){
     #paypal-button {
         margin-left: -145px;
     }
@@ -222,300 +237,348 @@ li.disable-click.selectedOption > div {
 }*/
 
 
-/* ===================== 
+    /* ===================== 
    SingleClient.cs 
    ===================== */
-.form-group {
-  position: relative;
-  font-size: 18px;
-}
-.form-group input, .form-group select {
-  height: 40px;
-}
-.form-group input[type="radio"] {
-  height: 18px;
-}
-.form-group label {
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  font-size: 18px;
-  font-weight: 400;
-  padding: 0 8px;
-  background: #fff;
-  -moz-transition: all 100ms ease-in-out;
-  -o-transition: all 100ms ease-in-out;
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
-}
-.form-group label.moveUp {
-    top: -10px;
-    font-size: 16px;
-    font-weight: 600;
-    -moz-transition: all 100ms ease-in-out;
-    -o-transition: all 100ms ease-in-out;
-    -webkit-transition: all 100ms ease-in-out;
-    transition: all 100ms ease-in-out;
-}
-.form-group label.stayUp {
-    top: -10px;
-    font-size: 16px;
-    font-weight: 600;
-    -moz-transition: all 100ms ease-in-out;
-    -o-transition: all 100ms ease-in-out;
-    -webkit-transition: all 100ms ease-in-out;
-    transition: all 100ms ease-in-out;
-}
-.terms-label {
-  position: absolute;
-  top: -10px;
-  left: 7px;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 0 8px;
-  background: #fff;
-}
-.center-text {
-    text-align: center;
-}
-.img-fluid {
-    max-width: 100%; 
-    height: auto;
-}
-.efund_title {
-    text-align: center;
-}
-.eFund_ErrorMessage {
-    color: red;
-}
-.efund_container {
-	font-family: 'Open Sans', sans-serif;
-	font-weight:300;	
-}
-.efund_h2 {
-	font-weight:700;
-	font-size:25px;	
-	color:#333;
-	padding-bottom:10px;
-	border-bottom:#CCCACA 1px solid;
-    margin:inherit;
-    margin-bottom:10px;
-    margin-top:20px;
-    line-height:1.1;
-    font-family:inherit;
-}
-.efund_h3 {
-	font-size:20px;
-	color:#2e6da4;
-	font-weight:400;
-}
-.efund_hr {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px;
-}
-.efund_submit {
-    width: 80%; 
-    max-width: 300px;
-}
-.efund_PaymentOptionList {
-    padding-left: 0px;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-.efund_PaymentOptionItem,
-.efund_PaymentOptionOther {
-    display: block;
-    list-style-type: none;
-}
-.efund_PaymentOptionItem {
-    width: 100px;
-}
-.efund_PaymentOptionItem > div,
-.efund_PaymentOptionOther > div {
-    margin: 0 3px 10px;
-    height: 44px;
-}
-.efund_PaymentOptionItem div {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    opacity: 0.6;
-    padding: 6px 0;
-    border: 1px solid #457bd3;
-    border-radius: 4px;
-    line-height: 32px;
-    cursor: pointer;
-    -moz-transition: all 100ms ease-in-out;
-    -o-transition: all 100ms ease-in-out;
-    -webkit-transition: all 100ms ease-in-out;
-    transition: all 100ms ease-in-out;
-}
-.efund_PaymentOptionItem.selectedOption div {
-    background-color: #457bd3;
-    color: #fff;
-    opacity: 1;
-    -moz-transition: all 100ms ease-in-out;
-    -o-transition: all 100ms ease-in-out;
-    -webkit-transition: all 100ms ease-in-out;
-    transition: all 100ms ease-in-out;
-}
-.efundForm .form-group.ccErrorMsg::after {
-    content: 'Please enter a valid credit card number';
-    color: red;
-}
+    .form-group {
+      position: relative;
+      font-size: 18px;
+    }
+
+    .form-group input,
+    .form-group select {
+      height: 40px;
+    }
+
+    .form-group input[type="radio"] {
+      height: 18px;
+    }
+
+    .form-group label {
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      font-size: 18px;
+      font-weight: 400;
+      padding: 0 8px;
+      background: #fff;
+      -moz-transition: all 100ms ease-in-out;
+      -o-transition: all 100ms ease-in-out;
+      -webkit-transition: all 100ms ease-in-out;
+      transition: all 100ms ease-in-out;
+    }
+
+    .form-group label.moveUp {
+      top: -10px;
+      font-size: 16px;
+      font-weight: 600;
+      -moz-transition: all 100ms ease-in-out;
+      -o-transition: all 100ms ease-in-out;
+      -webkit-transition: all 100ms ease-in-out;
+      transition: all 100ms ease-in-out;
+    }
+
+    .form-group label.stayUp {
+      top: -10px;
+      font-size: 16px;
+      font-weight: 600;
+      -moz-transition: all 100ms ease-in-out;
+      -o-transition: all 100ms ease-in-out;
+      -webkit-transition: all 100ms ease-in-out;
+      transition: all 100ms ease-in-out;
+    }
+
+    .terms-label {
+      position: absolute;
+      top: -10px;
+      left: 7px;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 0 8px;
+      background: #fff;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .efund_title {
+      text-align: center;
+    }
+
+    .eFund_ErrorMessage {
+      color: red;
+    }
+
+    .efund_container {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+    }
+
+    .efund_h2 {
+      font-weight: 700;
+      font-size: 25px;
+      color: #333;
+      padding-bottom: 10px;
+      border-bottom: #CCCACA 1px solid;
+      margin: inherit;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      line-height: 1.1;
+      font-family: inherit;
+    }
+
+    .efund_h3 {
+      font-size: 20px;
+      color: #2e6da4;
+      font-weight: 400;
+    }
+
+    .efund_hr {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px;
+    }
+
+    .efund_submit {
+      width: 80%;
+      max-width: 300px;
+    }
+
+    .efund_PaymentOptionList {
+      padding-left: 0px;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    .efund_PaymentOptionItem,
+    .efund_PaymentOptionOther {
+      display: block;
+      list-style-type: none;
+    }
+
+    .efund_PaymentOptionItem {
+      width: 100px;
+    }
+
+    .efund_PaymentOptionItem>div,
+    .efund_PaymentOptionOther>div {
+      margin: 0 3px 10px;
+      height: 44px;
+    }
+
+    .efund_PaymentOptionItem div {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      opacity: 0.6;
+      padding: 6px 0;
+      border: 1px solid #457bd3;
+      border-radius: 4px;
+      line-height: 32px;
+      cursor: pointer;
+      -moz-transition: all 100ms ease-in-out;
+      -o-transition: all 100ms ease-in-out;
+      -webkit-transition: all 100ms ease-in-out;
+      transition: all 100ms ease-in-out;
+    }
+
+    .efund_PaymentOptionItem.selectedOption div {
+      background-color: #457bd3;
+      color: #fff;
+      opacity: 1;
+      -moz-transition: all 100ms ease-in-out;
+      -o-transition: all 100ms ease-in-out;
+      -webkit-transition: all 100ms ease-in-out;
+      transition: all 100ms ease-in-out;
+    }
+
+    .efundForm .form-group.ccErrorMsg::after {
+      content: 'Please enter a valid credit card number';
+      color: red;
+    }
 
 
-.efundForm .panel-body .row {
-  margin-left: -3px;
-  margin-right: -3px;
-}
-.efundForm .panel-body .efund_form_col {
-  padding-left: 3px;
-  padding-right: 3px;
-}
-.efundForm .form-group {
-  margin-bottom: 11px;
-}
-.efundForm .form-control {
-  font-size: 16px;
-/*   margin-bottom: 10px; */
-  height: 44px;
-}
-.efundForm small {
-/*   margin-bottom: 10px; */
-}
-.efundForm textarea.form-control {
-  height: auto;
-}
-.form-group label {
-  top: 10px;
-}
+    .efundForm .panel-body .row {
+      margin-left: -3px;
+      margin-right: -3px;
+    }
 
-.efundForm .efund_tab_group {
-  display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-  border-bottom: solid 3px #457bd3;
-}
-.efundForm .efund_tab_group > .btn {
-  -ms-flex-positive: 1;
-	-webkit-flex-grow: 1;
-	flex-grow: 1;
-  border-radius: 0;
-  border-bottom: none;
-  opacity: 0.7;
-}
-.efundForm .efund_tab_group > .btn + .btn {
-/*   border-left: solid 1px #ddd; */
-}
-.efundForm .efund_tab_group > .btn:disabled {
-  opacity: 1;
-  background: #457bd3;
-  border-color: #457bd3;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  color: #fff;
-  font-weight: 700;
-}
+    .efundForm .panel-body .efund_form_col {
+      padding-left: 3px;
+      padding-right: 3px;
+    }
 
-#efund_recurring_btns {
-  display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-  -webkit-flex-wrap: wrap;
-	flex-wrap: wrap;
-}
-#efund_recurring_btns .btn {
-  opacity: 0.6;
-  border-color: #457bd3;
-  width: 100%;
-/*   margin-bottom: 10px; */
-  padding: 6px;
-  height: 44px;
-  border-radius: 0;
-}
-#efund_recurring_btns .btn-wrapper:first-child .btn {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-#efund_recurring_btns .btn-wrapper.last .btn {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-#efund_recurring_btns .btn:disabled {
-  background-color: #457bd3;
-  color: #fff;
-  opacity: 1;
-}
-#efund_recurring_btns .efund_RecurringDonation {
-  padding-top: 10px;
-}
-#efund_recurring_btns .efund_RecurringDonation .form-group {
-  margin: 0 3px 10px;
-}
+    .efundForm .form-group {
+      margin-bottom: 11px;
+    }
 
-.efundForm h5 {
-  font-weight: 700;
-  margin-top: 5px;
-/*   line-height: 1.5em;
+    .efundForm .form-control {
+      font-size: 16px;
+      /*   margin-bottom: 10px; */
+      height: 44px;
+    }
+
+    .efundForm small {
+      /*   margin-bottom: 10px; */
+    }
+
+    .efundForm textarea.form-control {
+      height: auto;
+    }
+
+    .form-group label {
+      top: 10px;
+    }
+
+    .efundForm .efund_tab_group {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      border-bottom: solid 3px #457bd3;
+    }
+
+    .efundForm .efund_tab_group>.btn {
+      -ms-flex-positive: 1;
+      -webkit-flex-grow: 1;
+      flex-grow: 1;
+      border-radius: 0;
+      border-bottom: none;
+      opacity: 0.7;
+    }
+
+    .efundForm .efund_tab_group>.btn+.btn {
+      /*   border-left: solid 1px #ddd; */
+    }
+
+    .efundForm .efund_tab_group>.btn:disabled {
+      opacity: 1;
+      background: #457bd3;
+      border-color: #457bd3;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    #efund_recurring_btns {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    #efund_recurring_btns .btn {
+      opacity: 0.6;
+      border-color: #457bd3;
+      width: 100%;
+      /*   margin-bottom: 10px; */
+      padding: 6px;
+      height: 44px;
+      border-radius: 0;
+    }
+
+    #efund_recurring_btns .btn-wrapper:first-child .btn {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    #efund_recurring_btns .btn-wrapper.last .btn {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+
+    #efund_recurring_btns .btn:disabled {
+      background-color: #457bd3;
+      color: #fff;
+      opacity: 1;
+    }
+
+    #efund_recurring_btns .efund_RecurringDonation {
+      padding-top: 10px;
+    }
+
+    #efund_recurring_btns .efund_RecurringDonation .form-group {
+      margin: 0 3px 10px;
+    }
+
+    .efundForm h5 {
+      font-weight: 700;
+      margin-top: 5px;
+      /*   line-height: 1.5em;
   border-bottom: solid 1px #ddd; */
-}
-.efundForm .panel-body .no-gutter-row .efund_form_col {
-  padding-left: 0;
-  padding-right: 0;
-}
-.efundForm .panel-body .no-gutter-row .efund_form_col:first-child {
-  padding-left: 3px;
-}
-.efundForm .panel-body .no-gutter-row .efund_form_col:last-child {
-  padding-right: 3px;
-}
-.efundForm .panel-body .no-gutter-row .efund_form_col .form-control {
-  border-radius: 0;
-  border-right: solid 0.5px #eee;
-  border-left: solid 0.5px #eee;
-}
-.efundForm .panel-body .no-gutter-row .efund_form_col:first-child .form-control {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-left: solid 1px #ccc;
-}
-.efundForm .panel-body .no-gutter-row .efund_form_col:last-child .form-control {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-right: solid 1px #ccc;
-}
-.checkbox-group {
-  display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-  -webkit-align-items: center;
-	align-items: center;
-}
-.checkbox-group input[type=checkbox] {
-  margin: 0 0 5px;
-}
-.efund_terms {
-  margin-top: 10px;
-}
-.efund_terms .panel-body {
-  height: 120px;
-  overflow: scroll;
-}
+    }
 
-.efund_submit {
-  font-size: 16px;
-  font-weight: 700;
-  width: 100%;
-  max-width: none;
-}
+    .efundForm .panel-body .no-gutter-row .efund_form_col {
+      padding-left: 0;
+      padding-right: 0;
+    }
 
-@media (max-width: 500px) {
-/*   .efundForm .efund_tab_group {
+    .efundForm .panel-body .no-gutter-row .efund_form_col:first-child {
+      padding-left: 3px;
+    }
+
+    .efundForm .panel-body .no-gutter-row .efund_form_col:last-child {
+      padding-right: 3px;
+    }
+
+    .efundForm .panel-body .no-gutter-row .efund_form_col .form-control {
+      border-radius: 0;
+      border-right: solid 0.5px #eee;
+      border-left: solid 0.5px #eee;
+    }
+
+    .efundForm .panel-body .no-gutter-row .efund_form_col:first-child .form-control {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border-left: solid 1px #ccc;
+    }
+
+    .efundForm .panel-body .no-gutter-row .efund_form_col:last-child .form-control {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-right: solid 1px #ccc;
+    }
+
+    .checkbox-group {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .checkbox-group input[type=checkbox] {
+      margin: 0 0 5px;
+    }
+
+    .efund_terms {
+      margin-top: 10px;
+    }
+
+    .efund_terms .panel-body {
+      height: 120px;
+      overflow: scroll;
+    }
+
+    .efund_submit {
+      font-size: 16px;
+      font-weight: 700;
+      width: 100%;
+      max-width: none;
+    }
+
+    @media (max-width: 500px) {
+      /*   .efundForm .efund_tab_group {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
   }
@@ -523,154 +586,172 @@ li.disable-click.selectedOption > div {
     width: 90px;
     flex-grow: 0;
   } */
-}
-@media (max-width: 400px) {
-  #cc-paypal.nav > li > a > img.img-creditcards,
-  #cc-paypal.nav > li > a > img.img-paypal {
-    height: 25px;
-  }
-}
+    }
 
-/* ===================== 
+    @media (max-width: 400px) {
+
+      #cc-paypal.nav>li>a>img.img-creditcards,
+      #cc-paypal.nav>li>a>img.img-paypal {
+        height: 25px;
+      }
+    }
+
+    /* ===================== 
    Paypal Button Inline Styling 
    ===================== */
-#zoid-paypal-button-24d207063a {
-  font-size: 0;
-  width: 100%;
-  overflow: hidden;
-  min-width: 75px;
-}
-
-#zoid-paypal-button-24d207063a.paypal-button-size-responsive {
-  text-align: center;
-}
-
-#zoid-paypal-button-24d207063a > .zoid-outlet {
-  display: inline-block;
-  min-width: 75px;
-  max-width: 750px;
-  position: relative;
-}
-
-#zoid-paypal-button-24d207063a.paypal-button-layout-vertical > .zoid-outlet {
-  min-width: 75px;
-}
-
-#zoid-paypal-button-24d207063a > .zoid-outlet {
-  width:  150px;
-  height: 25px;
-}
-
-#zoid-paypal-button-24d207063a.paypal-button-size-responsive > .zoid-outlet {
-  width: 100%;
-}
-
-#zoid-paypal-button-24d207063a > .zoid-outlet > iframe {
-  min-width: 100%;
-  max-width: 100%;
-  width: 75px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#zoid-paypal-button-24d207063a > .zoid-outlet > iframe.zoid-component-frame {
-  z-index: 100;
-}
-
-#zoid-paypal-button-24d207063a > .zoid-outlet > iframe.zoid-prerender-frame {
-  transition: opacity .2s linear;
-  z-index: 200;
-}
-
-#zoid-paypal-button-24d207063a > .zoid-outlet > iframe.zoid-visible {
-  opacity: 1;
-}
-
-#zoid-paypal-button-24d207063a > .zoid-outlet > iframe.zoid-invisible {
-  opacity: 0;
-  pointer-events: none;
+    #zoid-paypal-button-24d207063a {
+      font-size: 0;
+      width: 100%;
+      overflow: hidden;
+      min-width: 75px;
     }
-         /*  */
-    </style>
+
+    #zoid-paypal-button-24d207063a.paypal-button-size-responsive {
+      text-align: center;
+    }
+
+    #zoid-paypal-button-24d207063a>.zoid-outlet {
+      display: inline-block;
+      min-width: 75px;
+      max-width: 750px;
+      position: relative;
+    }
+
+    #zoid-paypal-button-24d207063a.paypal-button-layout-vertical>.zoid-outlet {
+      min-width: 75px;
+    }
+
+    #zoid-paypal-button-24d207063a>.zoid-outlet {
+      width: 150px;
+      height: 25px;
+    }
+
+    #zoid-paypal-button-24d207063a.paypal-button-size-responsive>.zoid-outlet {
+      width: 100%;
+    }
+
+    #zoid-paypal-button-24d207063a>.zoid-outlet>iframe {
+      min-width: 100%;
+      max-width: 100%;
+      width: 75px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    #zoid-paypal-button-24d207063a>.zoid-outlet>iframe.zoid-component-frame {
+      z-index: 100;
+    }
+
+    #zoid-paypal-button-24d207063a>.zoid-outlet>iframe.zoid-prerender-frame {
+      transition: opacity .2s linear;
+      z-index: 200;
+    }
+
+    #zoid-paypal-button-24d207063a>.zoid-outlet>iframe.zoid-visible {
+      opacity: 1;
+    }
+
+    #zoid-paypal-button-24d207063a>.zoid-outlet>iframe.zoid-invisible {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /*  */
+  </style>
 </head>
 
 <body>
-    <br>
-    <hr>
-    <br>
-    <div id="nav">
-        <ul class="nav">
-            <a href="https://github.com/tide-27?tab=repositories" target="_blank"><li>🌍️  GitHub</li></a>
-            <a href="about.html"><li>🧭️  About</li></a>
-            <a href="contact.html"><li>📡️  Contakt</li></a>
-            <a href="donat.html"><li>🗿️  Donat</li></a>
-            <a href="index.html"><li>🏝️ Home</li> </a>
-        </ul>
-    </div>
-    <br>
-    <hr>
-    <h1>Donaten</h1>
-    <hr><br>
-    <!--  -->
-    <div class="container efund_container">
-        <div class="efund_title"></div>
-        <form action="" class="efundForm" id="singleClient" method="post"><input name="__RequestVerificationToken" type="hidden" value="ylt4xDCzLqF8Brm1Ji5VuVbupBJOCzcsxU2lnWB2lweQ6EBkVac57qA1aEFmtdEXqzAXL6DV2K_deUupa2CGxncCL5O5cWubUaChNTnJ7sA1">            
+  <br>
+  <hr>
+  <br>
+  <div id="nav">
+    <ul class="nav">
+      <a href="https://github.com/tide-27?tab=repositories" target="_blank">
+        <li>🌍️ GitHub</li>
+      </a>
+      <a href="about.html">
+        <li>🧭️ About</li>
+      </a>
+      <a href="contact.html">
+        <li>📡️ Contakt</li>
+      </a>
+      <a href="donat.html">
+        <li>🗿️ Donat</li>
+      </a>
+      <a href="index.html">
+        <li>🏝️ Home</li>
+      </a>
+    </ul>
+  </div>
+  <br>
+  <hr>
+  <h1>Donaten</h1>
+  <hr><br>
+  <!--  -->
+  <div class="container efund_container">
+    <div class="efund_title"></div>
+    <form action="" class="efundForm" id="singleClient" method="post"><input name="__RequestVerificationToken"
+        type="hidden"
+        value="ylt4xDCzLqF8Brm1Ji5VuVbupBJOCzcsxU2lnWB2lweQ6EBkVac57qA1aEFmtdEXqzAXL6DV2K_deUupa2CGxncCL5O5cWubUaChNTnJ7sA1">
+      <div class="row">
+        <div class="efund_form_col col-xs-12">
+          <h3>
+
+          </h3>
+        </div>
+        <div class="efund_form_col col-xs-12 col-md-6">
           <div class="row">
             <div class="efund_form_col col-xs-12">
-              <h3>
-      
-              </h3>
-            </div>
-            <div class="efund_form_col col-xs-12 col-md-6">
-              <div class="row">
-                <div class="efund_form_col col-xs-12">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title efund_h4">Contribution</h4>
-                    </div>
-                    <div class="panel-body">
-                      
-                      <div class="row">
-                        <ul class="efund_PaymentOptionList">
-                          <li class="efund_PaymentOptionItem" data-amount="10.00">
-                            <div tabindex="0">
-                              $10
-                            </div>
-                          </li>
-                          <li class="efund_PaymentOptionItem" data-amount="25.00">
-                            <div tabindex="0">
-                              $25
-                            </div>
-                          </li>
-                          <li class="efund_PaymentOptionItem" data-amount="50.00">
-                            <div tabindex="0">
-                              $50
-                            </div>
-                          </li>
-                          <li class="efund_PaymentOptionItem" data-amount="100.00">
-                            <div tabindex="0">
-                              $100
-                            </div>
-                          </li>
-                          <li class="efund_PaymentOptionItem" data-amount="1000.00">
-                            <div tabindex="0">
-                              $1000
-                            </div>
-                          </li>
-                          <li class="efund_PaymentOptionOther">
-                            <div class="form-group">
-                              <label class="control-label" for="OtherAmount" id="OtherAmountLabel">$ Other</label>                                                
-                              <input value="" autocomplete="off" class="form-control" data-val="true" data-val-number="The field Other Amount must be a number." data-val-required="The Other Amount field is required." id="OtherAmount" max="9999999.00" min="5.00" name="OtherAmount" step="0.01" type="number">
-                            </div>
-                          </li>
-                        </ul>
-                        <input id="Amount" name="Amount" type="hidden" value="0">
-                        <div class="clearfix"></div>
-                      </div>
-                      
-      <!--                 <div class="row">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title efund_h4">Contribution</h4>
+                </div>
+                <div class="panel-body">
+
+                  <div class="row">
+                    <ul class="efund_PaymentOptionList">
+                      <li class="efund_PaymentOptionItem" data-amount="10.00">
+                        <div tabindex="0">
+                          $10
+                        </div>
+                      </li>
+                      <li class="efund_PaymentOptionItem" data-amount="25.00">
+                        <div tabindex="0">
+                          $25
+                        </div>
+                      </li>
+                      <li class="efund_PaymentOptionItem" data-amount="50.00">
+                        <div tabindex="0">
+                          $50
+                        </div>
+                      </li>
+                      <li class="efund_PaymentOptionItem" data-amount="100.00">
+                        <div tabindex="0">
+                          $100
+                        </div>
+                      </li>
+                      <li class="efund_PaymentOptionItem" data-amount="1000.00">
+                        <div tabindex="0">
+                          $1000
+                        </div>
+                      </li>
+                      <li class="efund_PaymentOptionOther">
+                        <div class="form-group">
+                          <label class="control-label" for="OtherAmount" id="OtherAmountLabel">$ Other</label>
+                          <input value="" autocomplete="off" class="form-control" data-val="true"
+                            data-val-number="The field Other Amount must be a number."
+                            data-val-required="The Other Amount field is required." id="OtherAmount" max="9999999.00"
+                            min="5.00" name="OtherAmount" step="0.01" type="number">
+                        </div>
+                      </li>
+                    </ul>
+                    <input id="Amount" name="Amount" type="hidden" value="0">
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <!--                 <div class="row">
                         <div class="efund_form_col col-xs-12">
                           <div class="form-group efund_tab_group" id="efund_recurring_tabs">
                             <input type="button" id="btnOneTime" value="One Time" class="btn btn-default efund_choice" disabled="">
@@ -689,34 +770,39 @@ li.disable-click.selectedOption > div {
                           </div>
                         </div>
                       </div> -->
-                      
-                      <div class="row">
-                        <div class="efund_form_col col-xs-12">
-                          <div class="form-group" id="efund_recurring_btns">
-                            <div class="btn-wrapper">
-                              <input type="button" id="btnOneTime" value="One Time" class="btn btn-default efund_choice" disabled="">
-                            </div>
-                            <div class="btn-wrapper">
-                              <input type="button" id="btnWeekly" value="Weekly" class="btn btn-default efund_choice" />
-                            </div>
-                            <div class="btn-wrapper">
-                              <input type="button" id="btnMonthly" value="Monthly" class="btn btn-default efund_choice" />
-                            </div>
-                            <div class="btn-wrapper">
-                              <input type="button" id="btnQuarterly" value="Quarterly" class="btn btn-default efund_choice" />
-                            </div>
-                            <div class="btn-wrapper">
-                              <input type="button" id="btnAnnually" value="Annually" class="btn btn-default efund_choice" />
-                            </div>
-                            <div class="efund_RecurringDonation" style="display: none;">
-                              <div class="form-group">
-                                <label id="IterationsLabel" for="Iterations" class="control-label moveUp">Iterations</label>
-                                <input autocomplete="off" class="form-control numbersOnly" data-val="true" data-val-number="The field Iterations must be a number." data-val-required="The Iterations field is required." id="Iterations" name="Iterations" title="Iterations must be a number greater than 0" type="text" value="1">
-                              </div>
-                            </div>
-                          </div> 
+
+                  <div class="row">
+                    <div class="efund_form_col col-xs-12">
+                      <div class="form-group" id="efund_recurring_btns">
+                        <div class="btn-wrapper">
+                          <input type="button" id="btnOneTime" value="One Time" class="btn btn-default efund_choice"
+                            disabled="">
                         </div>
-      <!--                   <div class="efund_form_col col-xs-6 col-sm-4 efund_RecurringDonation" style="display: none;">
+                        <div class="btn-wrapper">
+                          <input type="button" id="btnWeekly" value="Weekly" class="btn btn-default efund_choice" />
+                        </div>
+                        <div class="btn-wrapper">
+                          <input type="button" id="btnMonthly" value="Monthly" class="btn btn-default efund_choice" />
+                        </div>
+                        <div class="btn-wrapper">
+                          <input type="button" id="btnQuarterly" value="Quarterly"
+                            class="btn btn-default efund_choice" />
+                        </div>
+                        <div class="btn-wrapper">
+                          <input type="button" id="btnAnnually" value="Annually" class="btn btn-default efund_choice" />
+                        </div>
+                        <div class="efund_RecurringDonation" style="display: none;">
+                          <div class="form-group">
+                            <label id="IterationsLabel" for="Iterations" class="control-label moveUp">Iterations</label>
+                            <input autocomplete="off" class="form-control numbersOnly" data-val="true"
+                              data-val-number="The field Iterations must be a number."
+                              data-val-required="The Iterations field is required." id="Iterations" name="Iterations"
+                              title="Iterations must be a number greater than 0" type="text" value="1">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--                   <div class="efund_form_col col-xs-6 col-sm-4 efund_RecurringDonation" style="display: none;">
                           <div>
                             <div class="form-group">
                               <label id="IterationsLabel" for="Iterations" class="control-label moveUp">Iterations</label>
@@ -724,89 +810,99 @@ li.disable-click.selectedOption > div {
                             </div>
                           </div>
                         </div> -->
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="efund_form_col col-xs-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title efund_h4">Personal Information</h4>
+                </div>
+                <div class="panel-body">
+
+                  <div class="row">
+                    <div class="efund_form_col col-xs-12 col-sm-8">
+                      <div class="form-group">
+                        <label class="control-label" for="Email">Email</label>
+                        <input autocomplete="off" class="form-control" data-val="true"
+                          data-val-required="The Email field is required." id="Email" name="Email"
+                          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]*[a-zA-Z0-9-]+\.[a-zA-Z]{2,5}$" required=""
+                          title="Please enter a valid email address." type="text" value="">
                       </div>
-                      
+                    </div>
+                    <div class="efund_form_col col-xs-12 col-sm-4">
+                      <div class="form-group">
+                        <label class="control-label" for="Phone">Phone</label>
+                        <input autocomplete="off" class="form-control" id="Phone" name="Phone" required="" type="text"
+                          value="">
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="efund_form_col col-xs-12">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title efund_h4">Personal Information</h4>
+
+                  <div class="row">
+                    <div class="efund_form_col col-xs-12">
+                      <div class="form-group efund_tab_group">
+                        <input type="button" id="btnPersonal" value="Individual" class="btn btn-default efund_choice"
+                          disabled="">
+                        <input type="button" id="btnCompany" value="Company" class="btn btn-default efund_choice">
+                        <input type="button" id="btnSecond" value="Couple" class="btn btn-default efund_choice">
+                      </div>
                     </div>
-                    <div class="panel-body">
-                      
-                      <div class="row">
-                        <div class="efund_form_col col-xs-12 col-sm-8">
-                          <div class="form-group">
-                            <label class="control-label" for="Email">Email</label>
-                            <input autocomplete="off" class="form-control" data-val="true" data-val-required="The Email field is required." id="Email" name="Email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]*[a-zA-Z0-9-]+\.[a-zA-Z]{2,5}$" required="" title="Please enter a valid email address." type="text" value="">
-                          </div>
-                        </div>
-                        <div class="efund_form_col col-xs-12 col-sm-4">
-                          <div class="form-group">
-                            <label class="control-label" for="Phone">Phone</label>
-                            <input autocomplete="off" class="form-control" id="Phone" name="Phone" required="" type="text" value="">
-                          </div>
-                        </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="efund_form_col col-xs-12 two-contributor-title">
+                      <h5>First Contributor</h5>
+                    </div>
+                  </div>
+                  <div class="row no-gutter-row" id="panelFirstLastName">
+                    <div class="efund_form_col col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="control-label" for="NameFirst">First Name</label>
+                        <input autocomplete="off" class="form-control" id="NameFirst" name="NameFirst" required=""
+                          type="text" value="">
                       </div>
-                      
-                      <div class="row">
-                        <div class="efund_form_col col-xs-12">
-                          <div class="form-group efund_tab_group">
-                            <input type="button" id="btnPersonal" value="Individual" class="btn btn-default efund_choice" disabled="">
-                            <input type="button" id="btnCompany" value="Company" class="btn btn-default efund_choice">
-                            <input type="button" id="btnSecond" value="Couple" class="btn btn-default efund_choice">
-                          </div>
-                        </div>
+                    </div>
+                    <div class="efund_form_col col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="control-label" for="NameLast">Last Name</label>
+                        <input autocomplete="off" class="form-control" id="NameLast" name="NameLast" required=""
+                          type="text" value="">
                       </div>
-                      
-                      <div class="row">
-                        <div class="efund_form_col col-xs-12 two-contributor-title">
-                          <h5>First Contributor</h5>
-                        </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group" style="display: none;" id="panelCompanyName">
+                    <label class="control-label" for="NameCompany">Company Name</label>
+                    <input autocomplete="off" class="form-control" id="NameCompany" name="NameCompany" type="text"
+                      value="">
+                  </div>
+
+                  <div class="row">
+                    <div class="efund_form_col col-xs-12 two-contributor-title">
+                      <h5>Second Contributor</h5>
+                    </div>
+                  </div>
+                  <div class="row no-gutter-row" style="display: none;" id="panelOtherName">
+                    <div class="efund_form_col col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="control-label" for="NameFirstOther">First Name</label>
+                        <input autocomplete="off" class="form-control" id="NameFirstOther" name="NameFirstOther"
+                          type="text" value="">
                       </div>
-                      <div class="row no-gutter-row" id="panelFirstLastName">
-                        <div class="efund_form_col col-xs-12 col-sm-6">
-                          <div class="form-group">
-                            <label class="control-label" for="NameFirst">First Name</label>
-                            <input autocomplete="off" class="form-control" id="NameFirst" name="NameFirst" required="" type="text" value="">
-                          </div>
-                        </div>
-                        <div class="efund_form_col col-xs-12 col-sm-6">
-                          <div class="form-group">
-                            <label class="control-label" for="NameLast">Last Name</label>
-                            <input autocomplete="off" class="form-control" id="NameLast" name="NameLast" required="" type="text" value="">
-                          </div>
-                        </div>
+                    </div>
+                    <div class="efund_form_col col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="control-label" for="NameLastOther">Last Name</label>
+                        <input autocomplete="off" class="form-control" id="NameLastOther" name="NameLastOther"
+                          type="text" value="">
                       </div>
-                      
-                      <div class="form-group" style="display: none;" id="panelCompanyName">
-                        <label class="control-label" for="NameCompany">Company Name</label>
-                        <input autocomplete="off" class="form-control" id="NameCompany" name="NameCompany" type="text" value="">
-                      </div>
-                      
-                      <div class="row">
-                        <div class="efund_form_col col-xs-12 two-contributor-title">
-                          <h5>Second Contributor</h5>
-                        </div>
-                      </div>
-                      <div class="row no-gutter-row" style="display: none;" id="panelOtherName">
-                        <div class="efund_form_col col-xs-12 col-sm-6">
-                          <div class="form-group">
-                            <label class="control-label" for="NameFirstOther">First Name</label>
-                            <input autocomplete="off" class="form-control" id="NameFirstOther" name="NameFirstOther" type="text" value="">
-                          </div>
-                        </div>
-                        <div class="efund_form_col col-xs-12 col-sm-6">
-                          <div class="form-group">
-                            <label class="control-label" for="NameLastOther">Last Name</label>
-                            <input autocomplete="off" class="form-control" id="NameLastOther" name="NameLastOther" type="text" value="">
-                          </div>
-                        </div>
-                      </div>
-                      
-      <!--                 <div class="row">
+                    </div>
+                  </div>
+
+                  <!--                 <div class="row">
                         <div class="efund_form_col col-xs-12 col-sm-5 col-md-12 col-lg-5">
                           <div class="form-group">
                             <label class="control-label" for="StreetAddress">Address</label>
@@ -891,316 +987,341 @@ li.disable-click.selectedOption > div {
                           </div>
                         </div>
                       </div> -->
-                      
-                      <div class="row">
-                        <div class="efund_form_col col-xs-12 two-contributor-title">
-                          <h5>Joint Address</h5>
-                        </div>
-                      </div>
-                      <div class="row no-gutter-row">
-                        <div class="efund_form_col col-xs-12 col-sm-5 col-md-12 col-lg-5">
-                          <div class="form-group">
-                            <label class="control-label" for="StreetAddress-2">Address</label>
-                            <input autocomplete="off" class="form-control" data-val="true" data-val-required="The Address field is required." id="StreetAddress-2" name="StreetAddress" required="" type="text" value="">
-                          </div>
-                        </div>
-                        <div class="efund_form_col col-xs-5 col-sm-3 col-md-5 col-lg-3">
-                          <div class="form-group">
-                            <label class="control-label" for="StreetCity-2">City</label>
-                            <input autocomplete="off" class="form-control" data-val="true" data-val-required="The City field is required." id="StreetCity-2" name="StreetCity" required="" type="text" value="">
-                          </div>
-                        </div>
-                        <div class="efund_form_col col-xs-3 col-sm-2 col-md-3 col-lg-2">
-                          <div class="form-group">
-                            <label class="control-label stayUp" for="StreetState-2">State</label>
-                            <select class="form-control" data-val="true" data-val-required="The State field is required." id="StreetState-2" name="StreetState"><option value="AK">AK</option>
-                              <option value="AL">AL</option>
-                              <option value="AR">AR</option>
-                              <option value="AS">AS</option>
-                              <option value="AZ">AZ</option>
-                              <option selected="selected" value="CA">CA</option>
-                              <option value="CO">CO</option>
-                              <option value="CT">CT</option>
-                              <option value="DC">DC</option>
-                              <option value="DE">DE</option>
-                              <option value="FL">FL</option>
-                              <option value="FM">FM</option>
-                              <option value="GA">GA</option>
-                              <option value="GU">GU</option>
-                              <option value="HI">HI</option>
-                              <option value="IA">IA</option>
-                              <option value="ID">ID</option>
-                              <option value="IL">IL</option>
-                              <option value="IN">IN</option>
-                              <option value="KS">KS</option>
-                              <option value="KY">KY</option>
-                              <option value="LA">LA</option>
-                              <option value="MA">MA</option>
-                              <option value="MD">MD</option>
-                              <option value="ME">ME</option>
-                              <option value="MH">MH</option>
-                              <option value="MI">MI</option>
-                              <option value="MN">MN</option>
-                              <option value="MO">MO</option>
-                              <option value="MP">MP</option>
-                              <option value="MS">MS</option>
-                              <option value="MT">MT</option>
-                              <option value="NC">NC</option>
-                              <option value="ND">ND</option>
-                              <option value="NE">NE</option>
-                              <option value="NH">NH</option>
-                              <option value="NJ">NJ</option>
-                              <option value="NM">NM</option>
-                              <option value="NV">NV</option>
-                              <option value="NY">NY</option>
-                              <option value="OH">OH</option>
-                              <option value="OK">OK</option>
-                              <option value="OR">OR</option>
-                              <option value="PA">PA</option>
-                              <option value="PR">PR</option>
-                              <option value="PW">PW</option>
-                              <option value="RI">RI</option>
-                              <option value="SC">SC</option>
-                              <option value="SD">SD</option>
-                              <option value="TN">TN</option>
-                              <option value="TX">TX</option>
-                              <option value="UT">UT</option>
-                              <option value="VA">VA</option>
-                              <option value="VI">VI</option>
-                              <option value="VT">VT</option>
-                              <option value="WA">WA</option>
-                              <option value="WI">WI</option>
-                              <option value="WV">WV</option>
-                              <option value="WY">WY</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="efund_form_col col-xs-4 col-sm-2 col-md-4 col-lg-2">
-                          <div class="form-group">
-                            <label class="control-label" for="StreetZip-2">Zip</label>
-                            <input autocomplete="off" class="form-control numbersOnly" data-val="true" data-val-required="The Zip field is required." id="StreetZip-2" maxlength="5" name="StreetZip" pattern="[0-9]{5}" required="" title="Zip code must be 5 digits long" type="text" value="">
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div class="row" id="panelEmployOcc">
-                        <div class="efund_form_col col-xs-12">
-                          <p><small>
-                            If you have no occupation or employer, do not leave blank. For occupation use general terms such as 'manager', 'homemaker', or 'none.' If not employed by a company, use terms such as 'self', 'retired', or 'unemployed.'
-                          </small></p>
-                        </div>
-                        <div class="efund_form_col col-xs-12 two-contributor-title">
-                          <h5>First Contributor</h5>
-                        </div>
-                        <div class="efund_form_col col-xs-12 col-sm-6">
-                          <div class="form-group">
-                            <label class="control-label" for="Employer">Employer</label>
-                            <input autocomplete="off" class="form-control" id="Employer" name="Employer" requireamount="50" type="text" value="">
-                          </div>
-                        </div>
-                        <div class="efund_form_col col-xs-12 col-sm-6">
-                          <div class="form-group">
-                            <label class="control-label" for="Occupation">Occupation</label>
-                            <input autocomplete="off" class="form-control" id="Occupation" name="Occupation" requireamount="50" type="text" value="">
-                          </div>
-                        </div>
-                        <div class="efund_form_col col-xs-12 col-sm-6">
-                          <div class="form-group">
-                            <label class="control-label" for="EmployerCity">Employer City</label>
-                            <input autocomplete="off" class="form-control" id="EmployerCity" name="EmployerCity" requireamount="50" type="text" value="">
-                          </div>
-                        </div>
-                        <div class="efund_form_col col-xs-12 col-sm-6">
-                          <div class="form-group">
-                            <label class="control-label stayUp" for="EmployerState">Employer State</label>
-                            <select class="form-control" data-val="true" data-val-required="The State field is required." id="EmloyerState" name="EmployerState">   
-                              <option value="AK">AK</option>
-                              <option value="AL">AL</option>
-                              <option value="AR">AR</option>
-                              <option value="AS">AS</option>
-                              <option value="AZ">AZ</option>
-                              <option selected="selected" value="CA">CA</option>
-                              <option value="CO">CO</option>
-                              <option value="CT">CT</option>
-                              <option value="DC">DC</option>
-                              <option value="DE">DE</option>
-                              <option value="FL">FL</option>
-                              <option value="FM">FM</option>
-                              <option value="GA">GA</option>
-                              <option value="GU">GU</option>
-                              <option value="HI">HI</option>
-                              <option value="IA">IA</option>
-                              <option value="ID">ID</option>
-                              <option value="IL">IL</option>
-                              <option value="IN">IN</option>
-                              <option value="KS">KS</option>
-                              <option value="KY">KY</option>
-                              <option value="LA">LA</option>
-                              <option value="MA">MA</option>
-                              <option value="MD">MD</option>
-                              <option value="ME">ME</option>
-                              <option value="MH">MH</option>
-                              <option value="MI">MI</option>
-                              <option value="MN">MN</option>
-                              <option value="MO">MO</option>
-                              <option value="MP">MP</option>
-                              <option value="MS">MS</option>
-                              <option value="MT">MT</option>
-                              <option value="NC">NC</option>
-                              <option value="ND">ND</option>
-                              <option value="NE">NE</option>
-                              <option value="NH">NH</option>
-                              <option value="NJ">NJ</option>
-                              <option value="NM">NM</option>
-                              <option value="NV">NV</option>
-                              <option value="NY">NY</option>
-                              <option value="OH">OH</option>
-                              <option value="OK">OK</option>
-                              <option value="OR">OR</option>
-                              <option value="PA">PA</option>
-                              <option value="PR">PR</option>
-                              <option value="PW">PW</option>
-                              <option value="RI">RI</option>
-                              <option value="SC">SC</option>
-                              <option value="SD">SD</option>
-                              <option value="TN">TN</option>
-                              <option value="TX">TX</option>
-                              <option value="UT">UT</option>
-                              <option value="VA">VA</option>
-                              <option value="VI">VI</option>
-                              <option value="VT">VT</option>
-                              <option value="WA">WA</option>
-                              <option value="WI">WI</option>
-                              <option value="WV">WV</option>
-                              <option value="WY">WY</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div class="row" style="display: none;" id="panelOtherEmployer">
-                        <div class="efund_form_col col-xs-12 two-contributor-title">
-                          <h5>Second Contributor</h5>
-                        </div>
-                        <div class="efund_form_col col-xs-12 col-sm-6">
-                          <div class="form-group">
-                            <label class="control-label" for="EmployerOther">Employer</label>
-                            <input autocomplete="off" class="form-control" id="EmployerOther" name="EmployerOther" type="text" value="">
-                          </div>
-                        </div>
-                        <div class="efund_form_col col-xs-12 col-sm-6">
-                          <div class="form-group">
-                            <label class="control-label" for="OccupationOther">Occupation</label>
-                            <input autocomplete="off" class="form-control" id="OccupationOther" name="OccupationOther" type="text" value="">
-                          </div>
-                        </div>
-                        <div class="efund_form_col col-xs-12 col-sm-6">
-                          <div class="form-group">
-                            <label class="control-label" for="EmployerCityOther">Employer City</label>
-                            <input autocomplete="off" class="form-control" id="EmployerCityOther" name="EmployerCityOther" requireamount="50" type="text" value="">
-                          </div>
-                        </div>
-                        <div class="efund_form_col col-xs-12 col-sm-6">
-                          <div class="form-group">
-                            <label class="control-label stayUp" for="EmployerStateOther">Employer State</label>
-                            <select class="form-control" data-val="true" data-val-required="The State field is required." id="EmloyerStateOther" name="EmployerStateOther">   
-                              <option value="AK">AK</option>
-                              <option value="AL">AL</option>
-                              <option value="AR">AR</option>
-                              <option value="AS">AS</option>
-                              <option value="AZ">AZ</option>
-                              <option selected="selected" value="CA">CA</option>
-                              <option value="CO">CO</option>
-                              <option value="CT">CT</option>
-                              <option value="DC">DC</option>
-                              <option value="DE">DE</option>
-                              <option value="FL">FL</option>
-                              <option value="FM">FM</option>
-                              <option value="GA">GA</option>
-                              <option value="GU">GU</option>
-                              <option value="HI">HI</option>
-                              <option value="IA">IA</option>
-                              <option value="ID">ID</option>
-                              <option value="IL">IL</option>
-                              <option value="IN">IN</option>
-                              <option value="KS">KS</option>
-                              <option value="KY">KY</option>
-                              <option value="LA">LA</option>
-                              <option value="MA">MA</option>
-                              <option value="MD">MD</option>
-                              <option value="ME">ME</option>
-                              <option value="MH">MH</option>
-                              <option value="MI">MI</option>
-                              <option value="MN">MN</option>
-                              <option value="MO">MO</option>
-                              <option value="MP">MP</option>
-                              <option value="MS">MS</option>
-                              <option value="MT">MT</option>
-                              <option value="NC">NC</option>
-                              <option value="ND">ND</option>
-                              <option value="NE">NE</option>
-                              <option value="NH">NH</option>
-                              <option value="NJ">NJ</option>
-                              <option value="NM">NM</option>
-                              <option value="NV">NV</option>
-                              <option value="NY">NY</option>
-                              <option value="OH">OH</option>
-                              <option value="OK">OK</option>
-                              <option value="OR">OR</option>
-                              <option value="PA">PA</option>
-                              <option value="PR">PR</option>
-                              <option value="PW">PW</option>
-                              <option value="RI">RI</option>
-                              <option value="SC">SC</option>
-                              <option value="SD">SD</option>
-                              <option value="TN">TN</option>
-                              <option value="TX">TX</option>
-                              <option value="UT">UT</option>
-                              <option value="VA">VA</option>
-                              <option value="VI">VI</option>
-                              <option value="VT">VT</option>
-                              <option value="WA">WA</option>
-                              <option value="WI">WI</option>
-                              <option value="WV">WV</option>
-                              <option value="WY">WY</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      
+
+                  <div class="row">
+                    <div class="efund_form_col col-xs-12 two-contributor-title">
+                      <h5>Joint Address</h5>
                     </div>
                   </div>
+                  <div class="row no-gutter-row">
+                    <div class="efund_form_col col-xs-12 col-sm-5 col-md-12 col-lg-5">
+                      <div class="form-group">
+                        <label class="control-label" for="StreetAddress-2">Address</label>
+                        <input autocomplete="off" class="form-control" data-val="true"
+                          data-val-required="The Address field is required." id="StreetAddress-2" name="StreetAddress"
+                          required="" type="text" value="">
+                      </div>
+                    </div>
+                    <div class="efund_form_col col-xs-5 col-sm-3 col-md-5 col-lg-3">
+                      <div class="form-group">
+                        <label class="control-label" for="StreetCity-2">City</label>
+                        <input autocomplete="off" class="form-control" data-val="true"
+                          data-val-required="The City field is required." id="StreetCity-2" name="StreetCity"
+                          required="" type="text" value="">
+                      </div>
+                    </div>
+                    <div class="efund_form_col col-xs-3 col-sm-2 col-md-3 col-lg-2">
+                      <div class="form-group">
+                        <label class="control-label stayUp" for="StreetState-2">State</label>
+                        <select class="form-control" data-val="true" data-val-required="The State field is required."
+                          id="StreetState-2" name="StreetState">
+                          <option value="AK">AK</option>
+                          <option value="AL">AL</option>
+                          <option value="AR">AR</option>
+                          <option value="AS">AS</option>
+                          <option value="AZ">AZ</option>
+                          <option selected="selected" value="CA">CA</option>
+                          <option value="CO">CO</option>
+                          <option value="CT">CT</option>
+                          <option value="DC">DC</option>
+                          <option value="DE">DE</option>
+                          <option value="FL">FL</option>
+                          <option value="FM">FM</option>
+                          <option value="GA">GA</option>
+                          <option value="GU">GU</option>
+                          <option value="HI">HI</option>
+                          <option value="IA">IA</option>
+                          <option value="ID">ID</option>
+                          <option value="IL">IL</option>
+                          <option value="IN">IN</option>
+                          <option value="KS">KS</option>
+                          <option value="KY">KY</option>
+                          <option value="LA">LA</option>
+                          <option value="MA">MA</option>
+                          <option value="MD">MD</option>
+                          <option value="ME">ME</option>
+                          <option value="MH">MH</option>
+                          <option value="MI">MI</option>
+                          <option value="MN">MN</option>
+                          <option value="MO">MO</option>
+                          <option value="MP">MP</option>
+                          <option value="MS">MS</option>
+                          <option value="MT">MT</option>
+                          <option value="NC">NC</option>
+                          <option value="ND">ND</option>
+                          <option value="NE">NE</option>
+                          <option value="NH">NH</option>
+                          <option value="NJ">NJ</option>
+                          <option value="NM">NM</option>
+                          <option value="NV">NV</option>
+                          <option value="NY">NY</option>
+                          <option value="OH">OH</option>
+                          <option value="OK">OK</option>
+                          <option value="OR">OR</option>
+                          <option value="PA">PA</option>
+                          <option value="PR">PR</option>
+                          <option value="PW">PW</option>
+                          <option value="RI">RI</option>
+                          <option value="SC">SC</option>
+                          <option value="SD">SD</option>
+                          <option value="TN">TN</option>
+                          <option value="TX">TX</option>
+                          <option value="UT">UT</option>
+                          <option value="VA">VA</option>
+                          <option value="VI">VI</option>
+                          <option value="VT">VT</option>
+                          <option value="WA">WA</option>
+                          <option value="WI">WI</option>
+                          <option value="WV">WV</option>
+                          <option value="WY">WY</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="efund_form_col col-xs-4 col-sm-2 col-md-4 col-lg-2">
+                      <div class="form-group">
+                        <label class="control-label" for="StreetZip-2">Zip</label>
+                        <input autocomplete="off" class="form-control numbersOnly" data-val="true"
+                          data-val-required="The Zip field is required." id="StreetZip-2" maxlength="5" name="StreetZip"
+                          pattern="[0-9]{5}" required="" title="Zip code must be 5 digits long" type="text" value="">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row" id="panelEmployOcc">
+                    <div class="efund_form_col col-xs-12">
+                      <p><small>
+                          If you have no occupation or employer, do not leave blank. For occupation use general terms
+                          such as 'manager', 'homemaker', or 'none.' If not employed by a company, use terms such as
+                          'self', 'retired', or 'unemployed.'
+                        </small></p>
+                    </div>
+                    <div class="efund_form_col col-xs-12 two-contributor-title">
+                      <h5>First Contributor</h5>
+                    </div>
+                    <div class="efund_form_col col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="control-label" for="Employer">Employer</label>
+                        <input autocomplete="off" class="form-control" id="Employer" name="Employer" requireamount="50"
+                          type="text" value="">
+                      </div>
+                    </div>
+                    <div class="efund_form_col col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="control-label" for="Occupation">Occupation</label>
+                        <input autocomplete="off" class="form-control" id="Occupation" name="Occupation"
+                          requireamount="50" type="text" value="">
+                      </div>
+                    </div>
+                    <div class="efund_form_col col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="control-label" for="EmployerCity">Employer City</label>
+                        <input autocomplete="off" class="form-control" id="EmployerCity" name="EmployerCity"
+                          requireamount="50" type="text" value="">
+                      </div>
+                    </div>
+                    <div class="efund_form_col col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="control-label stayUp" for="EmployerState">Employer State</label>
+                        <select class="form-control" data-val="true" data-val-required="The State field is required."
+                          id="EmloyerState" name="EmployerState">
+                          <option value="AK">AK</option>
+                          <option value="AL">AL</option>
+                          <option value="AR">AR</option>
+                          <option value="AS">AS</option>
+                          <option value="AZ">AZ</option>
+                          <option selected="selected" value="CA">CA</option>
+                          <option value="CO">CO</option>
+                          <option value="CT">CT</option>
+                          <option value="DC">DC</option>
+                          <option value="DE">DE</option>
+                          <option value="FL">FL</option>
+                          <option value="FM">FM</option>
+                          <option value="GA">GA</option>
+                          <option value="GU">GU</option>
+                          <option value="HI">HI</option>
+                          <option value="IA">IA</option>
+                          <option value="ID">ID</option>
+                          <option value="IL">IL</option>
+                          <option value="IN">IN</option>
+                          <option value="KS">KS</option>
+                          <option value="KY">KY</option>
+                          <option value="LA">LA</option>
+                          <option value="MA">MA</option>
+                          <option value="MD">MD</option>
+                          <option value="ME">ME</option>
+                          <option value="MH">MH</option>
+                          <option value="MI">MI</option>
+                          <option value="MN">MN</option>
+                          <option value="MO">MO</option>
+                          <option value="MP">MP</option>
+                          <option value="MS">MS</option>
+                          <option value="MT">MT</option>
+                          <option value="NC">NC</option>
+                          <option value="ND">ND</option>
+                          <option value="NE">NE</option>
+                          <option value="NH">NH</option>
+                          <option value="NJ">NJ</option>
+                          <option value="NM">NM</option>
+                          <option value="NV">NV</option>
+                          <option value="NY">NY</option>
+                          <option value="OH">OH</option>
+                          <option value="OK">OK</option>
+                          <option value="OR">OR</option>
+                          <option value="PA">PA</option>
+                          <option value="PR">PR</option>
+                          <option value="PW">PW</option>
+                          <option value="RI">RI</option>
+                          <option value="SC">SC</option>
+                          <option value="SD">SD</option>
+                          <option value="TN">TN</option>
+                          <option value="TX">TX</option>
+                          <option value="UT">UT</option>
+                          <option value="VA">VA</option>
+                          <option value="VI">VI</option>
+                          <option value="VT">VT</option>
+                          <option value="WA">WA</option>
+                          <option value="WI">WI</option>
+                          <option value="WV">WV</option>
+                          <option value="WY">WY</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row" style="display: none;" id="panelOtherEmployer">
+                    <div class="efund_form_col col-xs-12 two-contributor-title">
+                      <h5>Second Contributor</h5>
+                    </div>
+                    <div class="efund_form_col col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="control-label" for="EmployerOther">Employer</label>
+                        <input autocomplete="off" class="form-control" id="EmployerOther" name="EmployerOther"
+                          type="text" value="">
+                      </div>
+                    </div>
+                    <div class="efund_form_col col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="control-label" for="OccupationOther">Occupation</label>
+                        <input autocomplete="off" class="form-control" id="OccupationOther" name="OccupationOther"
+                          type="text" value="">
+                      </div>
+                    </div>
+                    <div class="efund_form_col col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="control-label" for="EmployerCityOther">Employer City</label>
+                        <input autocomplete="off" class="form-control" id="EmployerCityOther" name="EmployerCityOther"
+                          requireamount="50" type="text" value="">
+                      </div>
+                    </div>
+                    <div class="efund_form_col col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="control-label stayUp" for="EmployerStateOther">Employer State</label>
+                        <select class="form-control" data-val="true" data-val-required="The State field is required."
+                          id="EmloyerStateOther" name="EmployerStateOther">
+                          <option value="AK">AK</option>
+                          <option value="AL">AL</option>
+                          <option value="AR">AR</option>
+                          <option value="AS">AS</option>
+                          <option value="AZ">AZ</option>
+                          <option selected="selected" value="CA">CA</option>
+                          <option value="CO">CO</option>
+                          <option value="CT">CT</option>
+                          <option value="DC">DC</option>
+                          <option value="DE">DE</option>
+                          <option value="FL">FL</option>
+                          <option value="FM">FM</option>
+                          <option value="GA">GA</option>
+                          <option value="GU">GU</option>
+                          <option value="HI">HI</option>
+                          <option value="IA">IA</option>
+                          <option value="ID">ID</option>
+                          <option value="IL">IL</option>
+                          <option value="IN">IN</option>
+                          <option value="KS">KS</option>
+                          <option value="KY">KY</option>
+                          <option value="LA">LA</option>
+                          <option value="MA">MA</option>
+                          <option value="MD">MD</option>
+                          <option value="ME">ME</option>
+                          <option value="MH">MH</option>
+                          <option value="MI">MI</option>
+                          <option value="MN">MN</option>
+                          <option value="MO">MO</option>
+                          <option value="MP">MP</option>
+                          <option value="MS">MS</option>
+                          <option value="MT">MT</option>
+                          <option value="NC">NC</option>
+                          <option value="ND">ND</option>
+                          <option value="NE">NE</option>
+                          <option value="NH">NH</option>
+                          <option value="NJ">NJ</option>
+                          <option value="NM">NM</option>
+                          <option value="NV">NV</option>
+                          <option value="NY">NY</option>
+                          <option value="OH">OH</option>
+                          <option value="OK">OK</option>
+                          <option value="OR">OR</option>
+                          <option value="PA">PA</option>
+                          <option value="PR">PR</option>
+                          <option value="PW">PW</option>
+                          <option value="RI">RI</option>
+                          <option value="SC">SC</option>
+                          <option value="SD">SD</option>
+                          <option value="TN">TN</option>
+                          <option value="TX">TX</option>
+                          <option value="UT">UT</option>
+                          <option value="VA">VA</option>
+                          <option value="VI">VI</option>
+                          <option value="VT">VT</option>
+                          <option value="WA">WA</option>
+                          <option value="WI">WI</option>
+                          <option value="WV">WV</option>
+                          <option value="WY">WY</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
-      
-      
-            <div class="efund_form_col col-xs-12 col-md-6">
-              <div class="row">
-                <div class="efund_form_col col-xs-12">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title efund_h4">Payment</h4>
+          </div>
+        </div>
+
+
+        <div class="efund_form_col col-xs-12 col-md-6">
+          <div class="row">
+            <div class="efund_form_col col-xs-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title efund_h4">Payment</h4>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="efund_form_col col-xs-12">
+                      <ul id="cc-paypal" class="nav nav-pills nav-fill">
+                        <li class="nav-item active">
+                          <a id="ccNavButton" class="nav-link active" data-toggle="pill" href="#creditcard-opt"
+                            aria-controls="pills-creditcard" role="tab" aria-selected="true"><img
+                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85807/credit-cards.jpg"
+                              alt="Major Credit Cards" class="img-creditcards"></a>
+                        </li>
+                        <li class="nav-item">
+                          <a id="ppNavButton" class="nav-link" data-toggle="pill" href="#paypal-opt" role="tab"
+                            aria-controls="pills-paypal" aria-selected="false"><img
+                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85807/paypal.jpg" alt="PayPal"
+                              class="img-paypal"></a>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="panel-body">
-                      <div class="row">
-                        <div class="efund_form_col col-xs-12">
-                          <ul id="cc-paypal" class="nav nav-pills nav-fill">
-                            <li class="nav-item active">
-                              <a id="ccNavButton" class="nav-link active" data-toggle="pill" href="#creditcard-opt" aria-controls="pills-creditcard" role="tab" aria-selected="true"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85807/credit-cards.jpg" alt="Major Credit Cards" class="img-creditcards"></a>
-                            </li>
-                            <li class="nav-item">
-                              <a id="ppNavButton" class="nav-link" data-toggle="pill" href="#paypal-opt" role="tab" aria-controls="pills-paypal" aria-selected="false"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85807/paypal.jpg" alt="PayPal" class="img-paypal"></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="efund_form_col col-xs-12">
-                          <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade active in" id="creditcard-opt" role="tabpanel" aria-labelledby="pills-home-tab">
-      
-      <!--                         <div class="row">
+                  </div>
+                  <div class="row">
+                    <div class="efund_form_col col-xs-12">
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade active in" id="creditcard-opt" role="tabpanel"
+                          aria-labelledby="pills-home-tab">
+
+                          <!--                         <div class="row">
                                 <div class="efund_form_col col-xs-12 col-sm-8 col-md-6 col-lg-8">
                                   <div class="form-group">
                                     <label class="control-label" for="CCNumber">Credit Card Number</label>
@@ -1220,95 +1341,138 @@ li.disable-click.selectedOption > div {
                                   </div>
                                 </div>
                               </div> -->
-      
-                              <div class="row no-gutter-row">
-                                <div class="efund_form_col col-xs-12 col-sm-8 col-md-6 col-lg-8">
-                                  <div class="form-group">
-                                    <label class="control-label" for="CCNumber-2">Credit Card Number</label>
-                                    <input autocompletetype="Disabled" autocomplete="off" class="form-control numbersOnly disallow-spaces" id="CCNumber-2" maxlength="16" name="CCNumber" pattern="[0-9]{16}" title="Credit card number must have 16 digits, or 15 digits for American Express" type="text" value="" required="required">
-                                  </div>
-                                </div>
-                                <div class="efund_form_col col-xs-6 col-sm-2 col-md-3 col-lg-2">
-                                  <div class="form-group">
-                                    <label class="control-label" for="ExpDate-2">MM/YY</label>
-                                    <input autocomplete="off" class="form-control" id="ExpDate-2" name="ExpDate" placeholder="MM / YY" title="Expiration date must be in the future" type="text" value="" required="required">
-                                  </div>
-                                </div>
-                                <div class="efund_form_col col-xs-6 col-sm-2 col-md-3 col-lg-2">
-                                  <div class="form-group">
-                                    <label class="control-label" for="CCSecurity-2">CVC</label>
-                                    <input autocompletetype="Disabled" autocomplete="off" class="form-control numbersOnly" id="CCSecurity-2" maxlength="3" name="CCSecurity" pattern="[0-9]{3}" title="Security code must be 3 digits, or 4 digits for American Express" type="text" value="" required="required">
-                                  </div>
-                                </div>
-                              </div>
-      
-                              <div class="row">
-      <!--                           <div class="efund_form_col col-xs-6 col-sm-8"> -->
-                                <div class="efund_form_col col-xs-12" id="CCAddressDifferentColumn">
-                                  <div class="checkbox-group">
-                                    <input autocomplete="off" class="checkbox" data-val="true" data-val-required="The CCAddressDifferent field is required." id="CCAddressDifferent" name="CCAddressDifferent" style="float: left;" type="checkbox" value="true"><input name="CCAddressDifferent" type="hidden" value="false">
-                                    <label style="padding-left: 5px" for="CCAddressDifferent">My credit card address is different than my business address.</label>
-                                  </div>
-                                </div>
-                                <div class="efund_form_col col-xs-6 col-sm-4">
-                                  <div id="panelCCAddress" style="display: none;">
-      <!--                               <div class="efund_form_col col-xs-6 col-sm-3"> -->
-                                      <div class="form-group">
-                                        <label class="control-label" for="CCZip">CC Zip</label>
-                                        <input autocomplete="off" class="form-control numbersOnly" id="CCZip" maxlength="5" name="CCZip" title="Zip code must be 5 digits long" type="text" value="">
-                                      </div>
-      <!--                               </div> -->
-                                  </div>
-                                </div>
-                              </div>
-      
-                            </div>
-                            <div class="tab-pane fade" id="paypal-opt" role="tabpanel" aria-labelledby="pills-profile-tab">
-                              <div class="efund_form_col col-xs-3 col-sm-4 col-md-4"></div>
-                              <div id="paypal-button" class="efund_form_col col-xs-9 col-sm-8"><div id="zoid-paypal-button-24d207063a" class="paypal-button paypal-button-context-iframe paypal-button-label-checkout paypal-button-size-small paypal-button-layout-horizontal" style="height: 32px;"><div class="zoid-outlet" style="height: 32px; transition: all 0.5s ease-in-out 0.3s;"><iframe class="zoid-component-frame zoid-visible" frameborder="0" allowtransparency="true" name="" title="ppbutton" scrolling="no" allowpaymentrequest="allowpaymentrequest" src="https://www.sandbox.paypal.com/webapps/hermes/button?env=sandbox&amp;domain=localhost%3A25744&amp;sessionID=8418119c5c_gaydumrrhizti&amp;buttonSessionID=88ea04c2fc_gaydumrthizto&amp;funding.disallowed=venmo&amp;locale.x=en_US&amp;style.color=gold&amp;style.shape=pill&amp;style.size=small&amp;style.label=checkout&amp;style.fundingicons=false&amp;logLevel=warn&amp;sdkMeta=eyJ1cmwiOiJodHRwczovL3d3dy5wYXlwYWxvYmplY3RzLmNvbS9hcGkvY2hlY2tvdXQuanMifQ%3D%3D&amp;uid=24d207063a&amp;version=4&amp;xcomponent=1" style="background-color: transparent;"></iframe></div></div></div>
-                              <div id="paypal-warning" class="efund_form_col col-xs-12 warning-paypal">
-                                <label>Please specify an amount</label>
-                              </div>
-                              <div id="paypal-success" class="efund_form_col col-xs-12 success-paypal" style="display: none">
-                                <label>Payment authorized. Please click Pay below.</label>
-                              </div>
-                              <div id="paypal-error" class="efund_form_col col-xs-12 warning-paypal" style="display: none">
-                                <label>An error occurred. Please choose a different payment method</label>
-                              </div>
-                              <div id="paypal-continue" class="efund_form_col col-xs-12 warning-paypal" style="display:none">
-                                <label>Please finish the paypal checkout process</label>
+
+                          <div class="row no-gutter-row">
+                            <div class="efund_form_col col-xs-12 col-sm-8 col-md-6 col-lg-8">
+                              <div class="form-group">
+                                <label class="control-label" for="CCNumber-2">Credit Card Number</label>
+                                <input autocompletetype="Disabled" autocomplete="off"
+                                  class="form-control numbersOnly disallow-spaces" id="CCNumber-2" maxlength="16"
+                                  name="CCNumber" pattern="[0-9]{16}"
+                                  title="Credit card number must have 16 digits, or 15 digits for American Express"
+                                  type="text" value="" required="required">
                               </div>
                             </div>
+                            <div class="efund_form_col col-xs-6 col-sm-2 col-md-3 col-lg-2">
+                              <div class="form-group">
+                                <label class="control-label" for="ExpDate-2">MM/YY</label>
+                                <input autocomplete="off" class="form-control" id="ExpDate-2" name="ExpDate"
+                                  placeholder="MM / YY" title="Expiration date must be in the future" type="text"
+                                  value="" required="required">
+                              </div>
+                            </div>
+                            <div class="efund_form_col col-xs-6 col-sm-2 col-md-3 col-lg-2">
+                              <div class="form-group">
+                                <label class="control-label" for="CCSecurity-2">CVC</label>
+                                <input autocompletetype="Disabled" autocomplete="off" class="form-control numbersOnly"
+                                  id="CCSecurity-2" maxlength="3" name="CCSecurity" pattern="[0-9]{3}"
+                                  title="Security code must be 3 digits, or 4 digits for American Express" type="text"
+                                  value="" required="required">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <!--                           <div class="efund_form_col col-xs-6 col-sm-8"> -->
+                            <div class="efund_form_col col-xs-12" id="CCAddressDifferentColumn">
+                              <div class="checkbox-group">
+                                <input autocomplete="off" class="checkbox" data-val="true"
+                                  data-val-required="The CCAddressDifferent field is required." id="CCAddressDifferent"
+                                  name="CCAddressDifferent" style="float: left;" type="checkbox" value="true"><input
+                                  name="CCAddressDifferent" type="hidden" value="false">
+                                <label style="padding-left: 5px" for="CCAddressDifferent">My credit card address is
+                                  different than my business address.</label>
+                              </div>
+                            </div>
+                            <div class="efund_form_col col-xs-6 col-sm-4">
+                              <div id="panelCCAddress" style="display: none;">
+                                <!--                               <div class="efund_form_col col-xs-6 col-sm-3"> -->
+                                <div class="form-group">
+                                  <label class="control-label" for="CCZip">CC Zip</label>
+                                  <input autocomplete="off" class="form-control numbersOnly" id="CCZip" maxlength="5"
+                                    name="CCZip" title="Zip code must be 5 digits long" type="text" value="">
+                                </div>
+                                <!--                               </div> -->
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="paypal-opt" role="tabpanel" aria-labelledby="pills-profile-tab">
+                          <div class="efund_form_col col-xs-3 col-sm-4 col-md-4"></div>
+                          <div id="paypal-button" class="efund_form_col col-xs-9 col-sm-8">
+                            <div id="zoid-paypal-button-24d207063a"
+                              class="paypal-button paypal-button-context-iframe paypal-button-label-checkout paypal-button-size-small paypal-button-layout-horizontal"
+                              style="height: 32px;">
+                              <div class="zoid-outlet" style="height: 32px; transition: all 0.5s ease-in-out 0.3s;">
+                                <iframe class="zoid-component-frame zoid-visible" frameborder="0"
+                                  allowtransparency="true" name="" title="ppbutton" scrolling="no"
+                                  allowpaymentrequest="allowpaymentrequest"
+                                  src="https://www.sandbox.paypal.com/webapps/hermes/button?env=sandbox&amp;domain=localhost%3A25744&amp;sessionID=8418119c5c_gaydumrrhizti&amp;buttonSessionID=88ea04c2fc_gaydumrthizto&amp;funding.disallowed=venmo&amp;locale.x=en_US&amp;style.color=gold&amp;style.shape=pill&amp;style.size=small&amp;style.label=checkout&amp;style.fundingicons=false&amp;logLevel=warn&amp;sdkMeta=eyJ1cmwiOiJodHRwczovL3d3dy5wYXlwYWxvYmplY3RzLmNvbS9hcGkvY2hlY2tvdXQuanMifQ%3D%3D&amp;uid=24d207063a&amp;version=4&amp;xcomponent=1"
+                                  style="background-color: transparent;"></iframe></div>
+                            </div>
+                          </div>
+                          <div id="paypal-warning" class="efund_form_col col-xs-12 warning-paypal">
+                            <label>Please specify an amount</label>
+                          </div>
+                          <div id="paypal-success" class="efund_form_col col-xs-12 success-paypal"
+                            style="display: none">
+                            <label>Payment authorized. Please click Pay below.</label>
+                          </div>
+                          <div id="paypal-error" class="efund_form_col col-xs-12 warning-paypal" style="display: none">
+                            <label>An error occurred. Please choose a different payment method</label>
+                          </div>
+                          <div id="paypal-continue" class="efund_form_col col-xs-12 warning-paypal"
+                            style="display:none">
+                            <label>Please finish the paypal checkout process</label>
                           </div>
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="efund_form_col col-xs-12">
-                          <div class="form-group">
-                            <label class="control-label" for="Comment">Comments</label>
-                            <textarea autocomplete="off" class="form-control" cols="20" id="Comment" name="Comment" rows="3"></textarea>                                            </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="efund_form_col col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label" for="Comment">Comments</label>
+                        <textarea autocomplete="off" class="form-control" cols="20" id="Comment" name="Comment"
+                          rows="3"></textarea>
+                      </div>
+                    </div>
+                    <div class="efund_form_col col-xs-12 efund_terms">
+                      <p class="terms-label">Terms & Conditions</p>
+                      <div class="panel panel-default">
+                        <div class="panel-body">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id dolor nunc. Sed
+                            ultricies nisl ut eros lobortis, in laoreet est consequat. Vivamus efficitur urna sed
+                            tristique venenatis. Etiam tristique augue et mollis dictum. Pellentesque at mollis eros. In
+                            consequat vehicula quam ut commodo. Curabitur varius metus in tristique cursus. Quisque
+                            cursus eros congue magna vehicula eleifend. Proin leo lacus, imperdiet in rutrum in,
+                            malesuada eu mi. Sed consequat tristique vestibulum. Nulla nibh risus, cursus congue mollis
+                            hendrerit, consectetur id purus. Proin non enim laoreet, placerat purus nec, aliquam tellus.
+                          </p>
+
+                          <p>Vestibulum rutrum euismod convallis. Integer molestie risus at maximus fermentum. Morbi non
+                            tellus diam. Praesent dignissim nibh id eleifend consequat. Mauris arcu ligula, ornare nec
+                            nibh lacinia, rutrum elementum mi. Suspendisse vel nibh lobortis, maximus neque vitae,
+                            dignissim nibh. Sed sagittis aliquet ligula, nec pharetra lacus efficitur in. Vestibulum
+                            magna ipsum, volutpat non facilisis eu, convallis sed nisi. Suspendisse quis odio sed mauris
+                            pellentesque bibendum. Fusce est odio, tristique sit amet risus vitae, malesuada aliquet
+                            tortor. Curabitur pretium laoreet elit, condimentum porta mauris consectetur in. Quisque nec
+                            sem ac nibh mattis facilisis. Cras vel justo ligula. Donec mattis consequat ante eget
+                            egestas. Ut volutpat eros at auctor sagittis.</p>
                         </div>
-                        <div class="efund_form_col col-xs-12 efund_terms">
-                          <p class="terms-label">Terms & Conditions</p>
-                          <div class="panel panel-default">
-                            <div class="panel-body">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id dolor nunc. Sed ultricies nisl ut eros lobortis, in laoreet est consequat. Vivamus efficitur urna sed tristique venenatis. Etiam tristique augue et mollis dictum. Pellentesque at mollis eros. In consequat vehicula quam ut commodo. Curabitur varius metus in tristique cursus. Quisque cursus eros congue magna vehicula eleifend. Proin leo lacus, imperdiet in rutrum in, malesuada eu mi. Sed consequat tristique vestibulum. Nulla nibh risus, cursus congue mollis hendrerit, consectetur id purus. Proin non enim laoreet, placerat purus nec, aliquam tellus.</p>
-      
-      <p>Vestibulum rutrum euismod convallis. Integer molestie risus at maximus fermentum. Morbi non tellus diam. Praesent dignissim nibh id eleifend consequat. Mauris arcu ligula, ornare nec nibh lacinia, rutrum elementum mi. Suspendisse vel nibh lobortis, maximus neque vitae, dignissim nibh. Sed sagittis aliquet ligula, nec pharetra lacus efficitur in. Vestibulum magna ipsum, volutpat non facilisis eu, convallis sed nisi. Suspendisse quis odio sed mauris pellentesque bibendum. Fusce est odio, tristique sit amet risus vitae, malesuada aliquet tortor. Curabitur pretium laoreet elit, condimentum porta mauris consectetur in. Quisque nec sem ac nibh mattis facilisis. Cras vel justo ligula. Donec mattis consequat ante eget egestas. Ut volutpat eros at auctor sagittis.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="efund_form_col col-xs-12">
-                          <p>By submiting this payment you agree to the terms and conditions.</p>
-                        </div>
-                        <div class="efund_form_col col-xs-12">
-                          <div class="form-group center-text">
-                            <input id="mainSubmit" type="submit" value="Pay" class="btn btn-success efund_submit efund_CBCP_Next" onclick="ClientSideClick(this)">
-                            <p>
-                              <span class="eFund_ErrorMessage"></span>
-                            </p>
-                          </div>
-                        </div>
+                      </div>
+                    </div>
+                    <div class="efund_form_col col-xs-12">
+                      <p>By submiting this payment you agree to the terms and conditions.</p>
+                    </div>
+                    <div class="efund_form_col col-xs-12">
+                      <div class="form-group center-text">
+                        <input id="mainSubmit" type="submit" value="Pay"
+                          class="btn btn-success efund_submit efund_CBCP_Next" onclick="ClientSideClick(this)">
+                        <p>
+                          <span class="eFund_ErrorMessage"></span>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -1316,11 +1480,13 @@ li.disable-click.selectedOption > div {
               </div>
             </div>
           </div>
-        </form>
+        </div>
       </div>
-    <!--  -->
-<!-- script -->
-<!-- // double-click preventer
+    </form>
+  </div>
+  <!--  -->
+  <!-- script -->
+  <!-- // double-click preventer
 function ClientSideClick(myButton) {
     // Client side validation
     if (typeof (Page_ClientValidate) == 'function') {
@@ -1955,9 +2121,10 @@ $(window).on('load resize', function() {
   $btnList.find('.btn-wrapper').width( btnWidth );
   $('.efund_RecurringDonation').width( inputWidth );
 }); -->
-<hr><br>
-<span>Copyright &copy; IQ-IT .Co 2023. All rights reserved.</span>
+  <hr><br>
+  <span>Copyright &copy; IQ-IT .Co 2023. All rights reserved.</span>
 
 
 </body>
+
 </html>
