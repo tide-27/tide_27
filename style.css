@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+
+body {
+    background-color: rgb(75, 74, 74);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    font-family: 'IBM Plex Mono', monospace;
+    /* font-family: 'Zen Tokyo Zoo', cursive; */
+    font-size: 1.5rem;
+
+    filter: opacity(80%);
+}
+
+#nav {
+    /* border: 1px solid rgb(1, 250, 1); */
+    margin: 0;
+
+}
+
+.nav>a>li {
+    border: 1px solid rgb(255, 255, 255);
+    color: red;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 10rem;
+    padding: 1rem;
+    background-color: rgba(78, 74, 74, 0.56);
+}
+
+.nav>a>li:hover {
+    border: 1px solid rgb(0, 255, 13);
+    color: rgb(255, 255, 255);
+    border-radius: 5rem;
+    margin: 1rem 10rem;
+    padding: 1rem;
+    background-color: rgba(21, 18, 18, 0.56);
+    box-shadow: 0 1rem 1rem 0rem rgba(230, 230, 230, 0.564);
+}
+
+/* .nav>ul{
+    margin: 0;
+    padding: 0;
+} */
+
+ul.nav {
+    padding: 0;
+}
+
+#content {
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 1rem 1rem 0rem rgba(230, 230, 230, 0.564);
+    border-radius: 1rem;
+}
+
+/* div#content:hover{
+    transform: scale(1.2);
+} */
+
+.content>a>li {
+    /* border: 1px solid rgb(0, 255, 13); */
+    height: 25rem;
+    width: 15rem;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem 0rem rgba(255, 252, 252, 0.564);
+    align-items: flex-end;
+}
+
+li.projeckt {
+    background-image: url(https://i.vimeocdn.com/video/671435149-bdee627436eecbfe6a1d1a98c0b83aef568cec51d09070c06133cea38d15f912-d_640x360.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: hue-rotate(40deg);
+    border: 1px solid white;
+}
+
+li.codes {
+    background-image: url(https://i.vimeocdn.com/video/671435149-bdee627436eecbfe6a1d1a98c0b83aef568cec51d09070c06133cea38d15f912-d_640x360.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: invert(90%);
+    border: 1px solid white;
+}
+
+li.intro {
+    background-image: url(https://i.vimeocdn.com/video/671435149-bdee627436eecbfe6a1d1a98c0b83aef568cec51d09070c06133cea38d15f912-d_640x360.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: contrast(100%) brightness(100%);
+    border: 1px solid white;
+}
+
+
+li.intro:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    -webkit-box-shadow: 7px -9px 19px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px -9px 19px 2px rgba(0, 0, 0, 0.75);
+}
+
+li.projeckt:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    -webkit-box-shadow: 7px -9px 19px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px -9px 19px 2px rgba(0, 0, 0, 0.75);
+}
+
+li.codes:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    -webkit-box-shadow: 7px -9px 19px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px -9px 19px 2px rgba(0, 0, 0, 0.75);
+}
+
+ul.content {
+    display: flex;
+    flex-direction: row;
+}
+
+/* #footer{
+    border: 100px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(5, 195, 46);
+} */
+
+.footer>a>li {
+    border: 2px solid rgb(253, 252, 252);
+    color: red;
+    border-radius: 5px;
+    list-style-type: none;
+    /* margin: 1rem 40rem; */
+    padding: 1rem;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.512);
+
+}
+
+.footer>a>li:hover {
+    border: 2px solid rgba(254, 12, 12, 0.741);
+    color: rgb(10, 10, 10);
+    border-radius: 5px;
+    list-style-type: none;
+    /* margin: 1rem 40rem; */
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1rem 1rem 0rem rgba(230, 230, 230, 0.564);
+
+}
+
+ul.footer {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+ul.content {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+span {
+    color: #00ff0d;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 920px) {
+    ul.content {
+        display: block;
+
+    }
+
+    /* .footer>a>li{
+        display: block; 
+    }
+     */
+}

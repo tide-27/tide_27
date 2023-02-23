@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+      margin-left: 5rem;
+    }
+
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+      font-family: 'IBM Plex Mono', monospace;
+
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+
+      .col-25,
+      .col-75,
+      input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+
+    body {
+      background-color: rgb(75, 74, 74);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    li {
+      font-family: 'IBM Plex Mono', monospace;
+      /* font-family: 'Zen Tokyo Zoo', cursive; */
+      font-size: 1.5rem;
+
+      filter: opacity(80%);
+    }
+
+    #nav {
+      /* border: 1px solid rgb(1, 250, 1); */
+      margin: 0;
+
+    }
+
+    .nav>a>li {
+      border: 1px solid rgb(255, 255, 255);
+      color: red;
+      border-radius: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem 10rem;
+      padding: 1rem;
+      background-color: rgba(44, 43, 43, 0.56);
+
+    }
+
+    .nav>a>li:hover {
+      border: 3px solid rgb(255, 255, 255);
+      color: rgb(255, 255, 255);
+      border-radius: 5rem;
+      margin: 1rem 10rem;
+      padding: 1rem;
+      background-color: rgba(21, 18, 18, 0.56);
+      box-shadow: 0 1rem 1rem 0rem rgba(230, 230, 230, 0.564);
+      filter: invert(100%);
+
+    }
+
+    h1,
+    h2 {
+      font-family: 'IBM Plex Mono', monospace;
+      color: white;
+      margin: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+
+    /* .nav>ul{
+    margin: 0;
+    padding: 0;
+} */
+
+    div.container {
+      background-color: #60eb1569;
+
+    }
+
+    .container,
+    text {
+      font-family: 'IBM Plex Mono', monospace;
+
+    }
+
+    h2:hover {
+      color: rgb(184, 249, 31);
+    }
+
+    ul.nav {
+      padding: 0;
+    }
+
+    span {
+      color: #00ff0d;
+      /* border: 1px solid red; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2rem;
+    }
+  </style>
+</head>
+
+<br>
+<hr>
+<br>
+<div id="nav">
+  <ul class="nav">
+    <a href="https://github.com/tide-27?tab=repositories" target="_blank">
+      <li>🌍️ GitHub</li>
+    </a>
+    <a href="http://127.0.0.1:5500/about.html">
+      <li>🧭️ About</li>
+    </a>
+    <a href="http://127.0.0.1:5500/contact.html">
+      <li>📡️ Contakt</li>
+    </a>
+    <a href="http://127.0.0.1:5500/donat.html">
+      <li>🗿️ Donat</li>
+    </a>
+    <a href="index.html">
+      <li>🏝️ Home</li>
+    </a>
+  </ul>
+</div>
+<br>
+<hr>
+<br>
+<h1>Contact</h1>
+<hr><br>
+<h2>iqittiqi@gmail.com</h2><br>
+<a class="github" href="https://github.com/tide-27" target="_blank">
+  <h2>github.com/tide-27</h2>
+</a>
+<br>
+<hr>
+<!--  -->
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname" style="margin: 1rem;">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label class="lname" style="margin: 1rem;">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." style="color: #45a049;">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label class="lname" style="margin: 1rem;">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="💻️" style="color: #45a049;">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label class="lname" style="margin: 1rem;">Firma</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Firma name.." style="color: #45a0494a;">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="country" style="margin: 1rem;">How are you=)</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="Happy">Happy</option>
+          <option value="Sad">Sad</option>
+          <option value="Angry">Angry</option>
+          <option value="Disappointed">Disappointed</option>
+          <option value="Nervous">Nervous</option>
+          <option value="Anxious">Anxious</option>
+          <option value="Excited">Excited</option>
+          <option value="Content">Content</option>
+          <option value="Relaxed">Relaxed</option>
+          <option value="Jealous">Jealous</option>
+          <option value="Depressed">Depressed</option>
+          <option value="Surprised">Surprised</option>
+          <option value="australia">Australia</option>
+          <option value="Confused">Confused</option>
+          <option value="Bored">Bored</option>
+          <option value="Fearful">Fearful</option>
+          <option value="Insecure">Insecure</option>
+          <option value="Hopeful">Hopeful</option>
+          <option value="Inspired">Inspired</option>
+          <option value="Frustrated">Frustrated</option>
+          <option value="Shy">Shy</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject" style="margin: 1rem;">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" s name="subject" placeholder="
+        1. The first email was sent in 1971.
+        2. The first website was launched in 1991.
+        3. The first domain name ever registered was Symbolics.com in 1985.
+        4. The most commonly used password is “123456”.
+        5. The internet contains over 1 billion websites.
+        6. Google processes over 40,000 search queries every second.
+        7. The average American spends 24 hours online every week.
+        8. Over 500 million Tweets are sent every day.
+        9. The first online purchase was a pizza in 1994.
+        10. The average person spends 6 hours and 42 minutes online every day."></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <input type="submit" style="color: rgb(22, 248, 34); background-color: rgb(129, 129, 129);font-family: 'IBM Plex Mono', monospace;
+      ;" value="Submit">
+    </div>
+  </form>
+</div>
+<hr>
+<span>Copyright &copy; IQ-IT .Co 2023. All rights reserved.</span>
+
+</body>
+</html>

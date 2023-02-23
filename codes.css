@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+
+    height: 90vh;
+    /* display: grid; */
+    place-items: center;
+    background-color: rgba(28, 28, 28, 0.922);
+    overflow: hidden;
+  }
+
+  .box{
+    height: 35vh;
+    /* border: 2px solid red; */
+  }
+
+  div.layer{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    /* justify-content: center; */
+    margin: 0 auto;
+    border: 2px solid rgb(106, 232, 39);
+    /* margin-bottom: 2rem; */
+    max-width: 500px;
+    z-index: 1;
+  } 
+  
+  .layer {
+    transform: rotate(45deg);
+    /* width: min(60vw, 80vh); */
+    aspect-ratio: 1 / 1;
+    background-color: rgba(21, 61, 172, 0.248);
+    position: relative;
+    animation:
+      7s spin infinite ease-in-out alternate;
+    overflow: hidden;
+    border-radius: 50% 50%;
+  }
+  
+  .layer > .layer {
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%, -50%) rotate(var(--rot));
+  }
+  
+  @property --rot {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 3deg;
+  }
+  
+  @keyframes spin {
+    0% { --rot: -360deg; }
+    100% { --rot: 360deg; }
+  }
